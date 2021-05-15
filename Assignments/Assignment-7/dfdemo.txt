@@ -1,0 +1,20 @@
+Demo Instructions
+
+Expand the zip file
+
+cd to the directory /home/hadoop/sparkdf
+
+Copy the files people.csv, peropleh.csv, people.txt and people.json to HDFS
+into the directory /user/hadoop
+
+Start pyspark
+
+Execute each of the python demo files such as 
+
+     exec(open("/home/hadoop/sparkdf/spark1.py").read())
+
+Now execute spark2.py, spark2.py, spark2s.py, spark3.py, spark3s.py, spark4.py, spark4s.py
+
+Note the demo file spark2s.py fails. Why?
+
+
