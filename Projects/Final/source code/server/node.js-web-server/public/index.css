@@ -1,0 +1,80 @@
+body {
+  font-family: Arial;
+  color: black;
+}
+
+.split {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+}
+
+.left {
+  left: 0;
+  width: 40%;
+  position: relative;
+}
+
+.right {
+  right: 0;
+  width: 60%;
+  overflow: scroll;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tweet {
+  display: flex;
+  border-bottom: 1px solid #e6ecf0;
+  margin-bottom: 2px;
+  padding: 10px 20px;
+}
+
+.tweet:hover {
+  background: rgba(0, 0, 0, 0.03);
+  cursor: pointer;
+}
+
+.tweet a {
+  color: #1b94e0;
+  text-decoration: none;
+}
+
+.tweet a:hover {
+  text-decoration: underline;
+}
+
+.tweet .tweet__author-logo {
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.tweet__header {
+  display: flex;
+}
+
+.tweet .tweet__header .tweet__author-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: #14171a;
+  margin-right: 5px;
+}
+
+.tweet .tweet__header .tweet__author-slug {
+  color: #5b7083;
+  font-size: 15px;
+}
+
+.tweet .tweet__header .tweet__publish-time {
+  margin-left: 5px;
+  color: #657786;
+}
